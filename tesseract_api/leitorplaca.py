@@ -72,7 +72,7 @@ def preprocessing(img):
 
 # Função para enviar a placa detectada ao serviço Java para a entrada do veículo
 def send_plate_to_java_service_entry(plate_text):
-    url = 'http://localhost:8080/api/v1/parking-records/entry'
+    url = 'http://app:8080/api/v1/parking-records/entry'
     headers = {
         'X-API-KEY': '9aBc#3xZ!8qL@1mN$6tR',
         'Content-Type': 'application/json'
@@ -90,7 +90,7 @@ def send_plate_to_java_service_entry(plate_text):
 
 # Função para enviar a placa detectada ao serviço Java para a saída do veículo
 def send_plate_to_java_service_exit(plate_text):
-    url = 'http://localhost:8080/api/v1/parking-records/exit'
+    url = 'http://app:8080/api/v1/parking-records/exit'
     headers = {
         'X-API-KEY': '9aBc#3xZ!8qL@1mN$6tR',
         'Content-Type': 'application/json'
